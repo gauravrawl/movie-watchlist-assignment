@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+/* --Login & Register-- */
+.auth-container-main{
+  background-image: url('/images/home-background.webp');
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+}
+.auth-container{
+  width: 90%; 
+  max-width: 30rem;
+  background-color: aliceblue;
+  padding: 2rem; 
+  text-align: center;
+}
+
+.auth-container > form {
+  width: 100%; 
+  max-width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+  .auth-container {
+    max-width: 95%;
+  }
+}
+ /*------------------------*/
+
+
+/* -----------sidebar------*/
+.sidebar{
+  position: relative;
+  /* height: 100vh; */
+}
+
+.list-item-circle{
+  border-radius: 50%;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid red;
+  margin-right: .5rem;
+  background-color: rgb(153, 32, 32);
+  list-style: none;
+}
+
+.watchlist-bar{
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+@media screen and (max-width: 550px) {
+  .watchlist-bar{
+    height: calc(83vh - 200px);
+    overflow-y: auto;
+  }
+}
+
+/* User info and logout */
+.user-info{
+  position: absolute;
+  bottom: 0%;
+}
+/*-------------------*/
+
+
+
+/*----- Movies dashboard -----*/
+.add-watchlist-icon:hover{
+scale: 1.1;
+}
+
+.remove-watchlist-icon{
+  background-color: white;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 1%;
+}
+.remove-watchlist-icon:hover{
+    background-color: #ee9999fa;
+}
+.remove-watchlist-icon:active{
+  scale: .9;
+}
+
+.list-scroll{
+  height: 70vh;
+  overflow-y: scroll;
+}
+/*-------------------*/
+
+
+/*---- Scroll bar custom---*/
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ce1f1fc1;
+  border-radius: 4px;
+}
+
+.detail-container{
+  background-color: rgba(128, 128, 128, 0.235);
+  overflow-y: auto;
+}
+.detail-container img{
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+/*-------------------*/
